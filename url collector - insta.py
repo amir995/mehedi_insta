@@ -71,7 +71,7 @@ for url in target_list:
         for post in profile.get_posts():
             code = post.shortcode
 
-            file_name = f'post_links\{username}_post_url.txt'
+            file_name = f'{username}_post_url.txt'
             if os.path.exists(file_name):
                 with open(file_name, 'r') as f:
                     lines = f.read()
